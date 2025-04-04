@@ -7,7 +7,6 @@ export function useDarkMode(): [boolean, React.Dispatch<React.SetStateAction<boo
 
   useEffect(() => {
     const root = window.document.documentElement;
-    console.log('dat    ')
     if (darkMode) {
       root.classList.add('dark');
       localStorage.setItem('theme', 'dark');
@@ -17,5 +16,5 @@ export function useDarkMode(): [boolean, React.Dispatch<React.SetStateAction<boo
     }
   }, [darkMode]);
 
-  return [darkMode, setDarkMode];  // Return the state and setter function
+  return [darkMode, setDarkMode];
 }
