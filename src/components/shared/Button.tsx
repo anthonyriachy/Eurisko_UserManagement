@@ -12,7 +12,9 @@ function Button({text,onClick,textColor="#000000",bgColor="#ffffff",type="button
   return (
     <button
     onClick={() => onClick()}
-    className={`rounded-sm px-[16px] py-[8px] bg-[${bgColor}] hover:bg-[${bgColor}]/50 text-[${textColor}]`}
+    style={{ backgroundColor: bgColor, color: textColor }}
+
+    className={`rounded-sm px-[16px] py-[8px] hover:opacity-50 `}
     disabled={disabled}
     type={type}
   >
