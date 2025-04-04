@@ -6,28 +6,33 @@
   
 }
 
+button{
+  cursor: pointer;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
   --bg-blue: #3251D0;
   --bg-red: #FB2C35;
-  
   --bg-white: #FFFFFF;
 
   --text-blue: #3251D0;
-  --text-white:#FFFFFF;
   --text-black:#000000;
+  --text-white:#FFFFFF;
 
-  --border-black-opacity:rgba(0,0,0,0.50);
-
+ 
   /* light mode */
   --bg-color:#ffffff;
   --text-color:#000000;
-  --text-black-opacity:rgba(0,0,0,0.50);
+  --border-input-opacity:rgba(0,0,0,0.50);
+  --text-color-opacity: rgba(0,0,0,0.50);
 
 }
 
 .dark {
---bg-color: #020817;
---text-color: #ffffff;
---text-color-opacity: rgba(255,255,255,0.50);
+  --bg-color: #020817;
+  --text-color: #ffffff;
+  --text-color-opacity: rgba(255,255,255,0.50);
+  --border-input-opacity: rgba(255,255,255,0.50);
 }

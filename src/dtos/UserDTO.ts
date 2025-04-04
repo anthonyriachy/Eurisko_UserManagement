@@ -1,8 +1,9 @@
 export interface userDTO{
     id:string,
-    username:string,
+    firstName:string,
+    lastName:string,
     email:string,
-    status:string,
+    status:"active" | "locked",
     dateOfBirth:Date
 }
 
