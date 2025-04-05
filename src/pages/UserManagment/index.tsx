@@ -83,7 +83,7 @@ function index() {
       <input type="text" placeholder="Search users..." className="border-[1px] text-[var(--text-color)] border-[var(--border-input-opacity)] rounded-sm px-[8px] py-[8px] w-[240px]"/>
 
       {users?.length > 0 ? (
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-[24px] lg:gap-[32px]">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[24px] lg:gap-[32px]">
           {users.map((user,index) => (
             <UserCard user={user} key={index}/>
           ))}
