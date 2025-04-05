@@ -2,8 +2,7 @@ import { ReactComponent as MoonIcon } from "../assets/icons/moonWhite.svg";
 import { ReactComponent as DropDownIcon } from "../assets/icons/Dropdown.svg";
 import { useDarkMode } from "../hooks/useDarkMode";
 import { useState } from "react";
-import Button from "../components/shared/Button";
-function Header() {
+ function Header() {
   const [darkMode, setDarkMode] = useDarkMode();
   const [showDropdown, setShowDropdown] = useState(false);
 
@@ -26,9 +25,13 @@ function Header() {
       <p className="text-white md:text-[20px] font-medium">User Management</p>
       <div className="sm:flex hidden  items-center gap-[8px] sm:gap-[16px] ">
         
-        <Button text="Create User" onClick={() => handleCreateUser()} bgColor="var(--bg-white)" textColor="var(--text-blue)"/>
-        <Button text="Logout"onClick={() => handleLogout()} bgColor="var(--bg-red)" textColor="var(--text-white)"/>
-        <button onClick={() => handleChangeTheme()} className="ml-[8px]">
+        <button className={`rounded-sm px-[16px] py-[8px] hover:bg-[var(--bg-white)]/50 bg-[var(--bg-white)] text-[var(--text-blue)] `}>
+          Create User
+        </button>
+        <button className={`rounded-sm px-[16px] py-[8px] hover:bg-[var(--bg-red)]/50 bg-[var(--bg-red)] text-[var(--text-white)] `}>
+          Logout
+        </button>
+         <button onClick={() => handleChangeTheme()} className="ml-[8px]">
           <MoonIcon width={16} height={16} />
         </button>
       </div>

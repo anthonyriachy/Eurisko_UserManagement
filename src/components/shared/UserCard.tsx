@@ -1,7 +1,6 @@
  import { userDTO } from '../../dtos/UserDTO'
 import { formatDate } from '../../utils/formatDate'
-import Button from './Button'
-
+ 
 
 interface props{
     user:userDTO
@@ -24,9 +23,14 @@ function UserCard({user}:props) {
             <p className='text-[var(--text-color-opacity)]'>Date of Birth: {user?.dateOfBirth?formatDate(user?.dateOfBirth):"no date of birth"}</p>
         </div>
         <div className='flex items-center justify-end gap-[16px] px-[24px] mt-[16px] '>
-             <Button text='Edit' onClick={() => {}} bgColor='var(--bg-blue)' textColor='var(--text-white)'/>
-             <Button text='Delete' onClick={() => {}} bgColor='var(--bg-red)' textColor='var(--text-white)'/>
+            <button className={`rounded-sm px-[16px] py-[4px] hover:bg-[var(--bg-blue)]/50 bg-[var(--bg-blue)] text-[var(--text-white)] `}>
+                 Edit
+            </button>
              
+            <button className={`rounded-sm px-[16px] py-[4px] hover:bg-[var(--bg-red)]/50 bg-[var(--bg-red)] text-[var(--text-white)] `}>
+                 Delete
+            </button>
+              
         </div>
     </div>
   )
