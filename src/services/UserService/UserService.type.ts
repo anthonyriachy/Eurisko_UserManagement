@@ -1,4 +1,4 @@
-export interface userDTO{
+export type User = {
     id:string,
     firstName:string,
     lastName:string,
@@ -6,4 +6,3 @@ export interface userDTO{
     status:"active" | "locked",
     dateOfBirth:Date
 }
-

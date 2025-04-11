@@ -1,14 +1,9 @@
-import UserManagment from '../src/pages/UserManagment'
-import './App.css'
-import Header from './layouts/Header';
+import { Routes } from './routes';
 
 function App() {
 
   return (
-    <>
-     <Header/>
-     <UserManagment/>
-    </>
+    <Routes/>
   )
 }
 
